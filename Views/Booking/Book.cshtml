@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Flight Booking";
+}
+<div class="hero-section text-white">
+<h2>Flight Booking</h2>
+<p>Book your flights with us today!</p>
+
+<form method="post" asp-action="Book">
+    <div class="mb-3">
+        <label for="departure" class="form-label">Departure Airport</label>
+        <input type="text" class="form-control" id="departure" name="departure" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="arrival" class="form-label">Arrival Airport</label>
+        <input type="text" class="form-control" id="arrival" name="arrival" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="departureDate" class="form-label">Departure Date</label>
+        <input type="date" class="form-control" id="departureDate" name="departureDate" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="returnDate" class="form-label">Return Date (optional)</label>
+        <input type="date" class="form-control" id="returnDate" name="returnDate" />
+    </div>
+
+    <div class="mb-3">
+        <label for="passengers" class="form-label">Passengers</label>
+        <input type="number" class="form-control" id="passengers" name="passengers" min="1" value="1" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="travelClass" class="form-label">Class</label>
+        <select class="form-select" id="travelClass" name="travelClass">
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-light">Book Flight</button>
+</form>
+</div>

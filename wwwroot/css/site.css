@@ -1,0 +1,163 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+.hero-section{
+    background-color:black;
+    padding:40px 20px;
+}
+.welcome-text{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:white;
+    font-weight:500;
+}
+.image-row{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.privacy-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.image-card {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.image-privacy {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.overlay-text {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('https://example.com/your-image.jpg'); /* Replace with your own image URL */
+    background-size: cover;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 0 20px;
+}
+
+    .welcome-section h1 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .welcome-section p.lead {
+        font-size: 1.25rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.1rem;
+        color: white;
+        margin-top: 1rem;
+    }
+
+    .welcome-section .btn {
+        background-color: black;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .welcome-section .btn:hover {
+            background-color: black;
+        }
+
+    .welcome-section .footer-link {
+        color: white;
+        text-decoration: none;
+    }
+
+        .welcome-section .footer-link:hover {
+            text-decoration: underline;
+        }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Placeholder styling for form floating */
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}

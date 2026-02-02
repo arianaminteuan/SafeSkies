@@ -1,0 +1,31 @@
+﻿@model SafeSkies.Models.BookingFlight
+
+@{
+    ViewData["Title"] = "Booking Confirmation";
+}
+
+<div class="container mt-5 text-white">
+    <h2 class="mb-4">Your Flight Booking is Confirmed!</h2>
+
+    <div class="card p-4 shadow rounded">
+        <p><strong>Departure Airport:</strong> @Model.Departure</p>
+        <p><strong>Arrival Airport:</strong> @Model.Arrival</p>
+        <p><strong>Departure Date:</strong> @Model.DepartureDate.ToString("D")</p>
+
+        @if (Model.ReturnDate.HasValue)
+        {
+            <p><strong>Return Date:</strong> @Model.ReturnDate.Value.ToString("D")</p>
+        }
+        else
+        {
+            <p><strong>Return Date:</strong> Not specified</p>
+        }
+
+        <p><strong>Number of Passengers:</strong> @Model.Passengers</p>
+        <p><strong>Travel Class:</strong> @Model.TravelClass</p>
+
+        <div class="mt-4">
+            <a href="/Booking/Book" class="btn btn-primary">Book Another Flight</a>
+        </div>
+    </div>
+</div>
